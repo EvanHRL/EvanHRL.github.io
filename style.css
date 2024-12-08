@@ -1,0 +1,159 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "queen" ;
+    src: url("fonts/Queen\ Rogette.otf");
+}
+
+header{
+    background-color: #344D59;
+    width: 100%;
+    position: fixed;
+    top:0px;
+    left:0px;
+    height: 170px;
+    align-items: center;
+    justify-content: space-around ;
+    display: flex;
+    z-index: 2;
+    transition: height 0.4s ease-in-out;
+    font-family: "queen";
+
+}
+
+header.scrolled{
+    height:10%
+}
+
+header a{
+    color: white;
+    font-size: 35px;
+    transition: font-size 0.4s ease-in-out;
+}
+
+header.scrolled a{
+    font-size: 27px;
+}
+
+header img{
+    width:7%;
+    transition: width 0.4s ease-in-out;
+}
+
+header.scrolled img{
+    width:4%;
+}
+ 
+#fleche{
+    width:5%;
+    position: absolute;
+    top:75%;
+    left:912px;
+}
+
+#imgacceuil #foodtruck{
+    width: 100%;
+    filter:blur(4px);
+}
+
+#imgacceuil h1{
+    position: absolute;
+    top:40%;
+    left:734.8px;
+    background-color: #B8CBD0;
+    font-size: 70px;
+    z-index: 1;
+    
+}
+
+header a:link{
+    text-decoration: none;
+}
+
+header a:hover{
+    margin-top:0px;
+    color: black;
+    text-decoration: underline;
+}
+#loca{
+    background-color:#B8CBD0 ;
+    height:900px;
+}
+
+#loca #map{
+    float:left;
+    margin : 50px 0px 0px 50px;
+    box-shadow: 10px 10px 20px black;
+}
+
+#loca table{
+    position:absolute;
+    font-size: 30px;
+    margin:250px 0px 0px 1050px;
+    border-collapse:collapse;
+    width: 800px;
+    text-align: center;
+    border: 2px solid black;
+
+}
+
+#loca tr{
+    border: 2px solid black;
+}
+
+#loca th{
+    border: 2px solid black;
+    background-color:#344D59 ;
+}
+
+#loca td{
+    border: 2px solid black;
+}
+
+#apropos{
+    padding:50px;
+    background-color: #B8CBD0;
+    border-top: solid 4px black;
+    text-align: center;
+
+}
+
+#apropos h1{
+    font-size: 50px;
+    text-decoration: underline;
+    font-family: "queen";
+
+}
+
+#apropos p{
+    font-size: 30px;
+}
+
+#apropos button img{
+    width:50px
+}
+
+#apropos button{
+    padding: 0;             
+    border: none;           
+    background: none;       
+    display: inline-block;  
+    cursor: pointer;  
+}
+
+footer{
+    width:100%;
+    background-color: #344D59;
+    height:100px;
+    text-align: center;
+}
+
+footer img{
+    width:50px;
+    margin:25px 0px 0px 25px;
+}

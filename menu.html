@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylem.css">
+    <title>La TourDePizz</title>
+</head>
+
+<body>
+
+    
+<script>
+    document.addEventListener("scroll", () => {
+        const header= document.querySelector("header");
+
+        if(window.scrollY > 0){
+            header.classList.add("scrolled")
+        }else{
+            header.classList.remove("scrolled")
+        }
+    });
+
+</script>
+
+    <header>
+        <img src="img/logo.webp" alt="logo">
+        <a href="index.html">Accueil</a>
+        <a href="menu.html">Menu</a>
+        <a href="index.html#loca">Localisation</a>
+        <a href="index.html#apropos">À propos</a>
+    </header>
+
+<div id="menu1">
+    <img src="img/pizza1.jpeg" alt="pizza1">
+    <button>Pizza Margaritta</button>
+</div>
+
+<div id="menu2">
+    <img src="img/pizza3.webp" alt="pizza2">
+    <button>Pizza 4 Fromages</button>
+</div>
+
+<div id="menu3">
+    <img src="img/pizza4.jpg" alt="pizza3">
+    <button>Pizza Reine</button>
+</div>
+
+<div id="menu4">
+    <img src="img/pizza5.jpg" alt="pizza4">
+    <button>Pizza Saumon</button>
+</div>
+
+
+<div id="boisson1">
+    <img src="img/boisson1.jpg" alt="boisson1">
+    <button>Coca Cola</button>
+</div>
+
+<div id="boisson2">
+    <img src="img/boisson2.jpg" alt="boisson2">
+    <button>Fanta</button>
+</div>
+
+<div id="boisson3">
+    <img src="img/boisson3.webp" alt="boisson3">
+    <button>Sprite</button>
+</div>
+
+</body>

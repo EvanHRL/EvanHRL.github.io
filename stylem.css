@@ -1,0 +1,164 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "queen" ;
+    src: url("fonts/Queen\ Rogette.otf");
+}
+
+header{
+    background-color: #344D59;
+    width: 100%;
+    position: fixed;
+    top:0px;
+    left:0px;
+    height: 170px;
+    align-items: center;
+    justify-content: space-around ;
+    display: flex;
+    z-index: 2;
+    transition: height 0.4s ease-in-out;
+    font-family: "queen";
+
+}
+
+header.scrolled{
+    height:10%
+}
+
+header a{
+    color: white;
+    font-size: 35px;
+    transition: font-size 0.4s ease-in-out;
+}
+
+header.scrolled a{
+    font-size: 27px;
+}
+
+header img{
+    width:7%;
+    transition: width 0.4s ease-in-out;
+}
+
+header.scrolled img{
+    width:4%;
+}
+
+header a:link{
+    text-decoration: none;
+}
+
+header a:hover{
+    margin-top:0px;
+    color: black;
+    text-decoration: underline;
+}
+
+div img{
+    height:180px;
+    width:250px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+button{
+    background-color: white;
+    margin-top: 20px;
+    padding: 10px 70px 10px 70px;
+    border-radius: 5px;
+}
+
+
+#menu1 {
+    float: left;
+    background-color:#B8CBD0  ;
+     margin:200px 0px 0px 200px;
+     border-radius: 12px;
+     border: solid black 2px;
+     padding: 10px ;
+     text-align: center;
+     box-shadow: 10px 10px 30px black;
+
+}
+
+
+#menu2 {
+    float: left;
+    background-color:#B8CBD0  ;
+     margin:200px 0px 0px 146.66px;
+     border-radius: 12px;
+     border: solid black 2px;
+     padding: 10px ;
+     text-align: center;
+     box-shadow: 10px 10px 30px black;
+     
+
+}
+
+
+#menu3 {
+    float: left;
+    background-color:#B8CBD0  ;
+     margin:200px 0px 0px 146.66px;
+     border-radius: 12px;
+     border: solid black 2px;
+     padding: 10px ;
+     text-align: center;
+     box-shadow: 10px 10px 30px black;
+
+}
+
+
+#menu4 {
+    float: left;
+    background-color:#B8CBD0  ;
+     margin:200px 0px 0px 146.66px;
+     border-radius: 12px;
+     border: solid black 2px;
+     padding: 10px ;
+     text-align: center;
+     box-shadow: 10px 10px 30px black;
+
+}
+
+#boisson1{
+    float: left;
+    background-color:#B8CBD0  ;
+     margin:100px 0px 0px 410px;
+     border-radius: 12px;
+     border: solid black 2px;
+     padding: 10px ;
+     text-align: center;
+     box-shadow: 10px 10px 30px black;
+}
+
+#boisson2{
+    float: left;
+    background-color:#B8CBD0  ;
+     margin:100px 0px 0px 146.66px;
+     border-radius: 12px;
+     border: solid black 2px;
+     padding: 10px ;
+     text-align: center;
+     box-shadow: 10px 10px 30px black;
+}
+
+#boisson3{
+    float:left;
+    background-color:#B8CBD0  ;
+     margin:100px 0px 0px 146.66px;
+     border-radius: 12px;
+     border: solid black 2px;
+     padding: 10px ;
+     text-align: center;
+     box-shadow: 10px 10px 30px black;
+}
+
+
+

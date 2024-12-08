@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>La TourDePizz</title>
+</head>
+
+<body>
+
+    <script>
+        document.addEventListener("scroll", () => {
+            const header= document.querySelector("header");
+    
+            if(window.scrollY > 0){
+                header.classList.add("scrolled")
+            }else{
+                header.classList.remove("scrolled")
+            }
+        });
+    </script>
+
+    <header>
+        <img src="img/logo.webp" alt="logo">
+        <a href="index.html">Accueil</a>
+        <a href="menu.html">Menu</a>
+        <a href="#loca">Localisation</a>
+        <a href="#apropos">À propos</a>
+    </header>
+
+    
+<div id="imgacceuil">
+    <h1>La TourDePizz</h1>
+    <img id="foodtruck" src="img/ftb.jpg" alt="foodtruck" >
+    <img id="fleche" src="img/arrow-1455_256.gif" alt="fleche">
+</div>
+
+<div id="loca">
+    <iframe id = "map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20819.79818188234!2d1.0027008!3d49.28634879999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1733402060678!5m2!1sfr!2sfr" width="960" height="800" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <table>
+    <thead>
+            <tr>
+            <th>Jour</th>
+            <th>Midi(11h - 14h)</th>
+            <th>Soir (18h - 21h)</th>
+            </tr>
+    </thead>
+     <tbody>
+            <tr>
+            <td>Lundi</td>
+            <td>IUT Elbeuf</td>
+            <td>Elbeuf centre</td>
+            </tr>
+            <tr>
+            <td>Mardi</td>
+            <td>IUT Elbeuf</td>
+            <td>Elbeuf centre</td>
+            </tr>
+            <tr>
+            <td>Mercredi</td>
+            <td>IUT Elbeuf</td>
+            <td>Fermé</td>      
+            </tr>
+            <tr>
+            <td>Jeudi</td>
+            <td>IUT Elbeuf</td>
+            <td>Elbeuf centre</td>
+            </tr>
+            <tr>
+            <td>Vendredi</td>
+            <td>IUT Elbeuf</td>
+            <td>Elbeuf centre</td>
+            </tr>
+            <tr>
+            <td>Samedi</td>
+            <td>Fermé</td>
+            <td>Elbeuf centre</td>
+            </tr>
+            <tr>
+            <td>Dimanche</td>
+            <td>Fermé</td>
+            <td>Fermé</td>
+            </tr>
+    </tbody>
+    </table>
+</div>
+
+<div id="apropos">
+    <h1>Qui sommes-nous ?</h1>
+    <button id="fr"><img src="img/france-flag-round-shape-free-png.webp" alt="france"></button>
+    <button id="en"><img src="img/bba8dc77197ea7bdc0663dfe6250067a.png" alt="anglais"></button>
+    <div id="langue">
+    <p>Nous sommes une petite entreprise de food truck spécialisée dans la cuisine italienne, et plus particulièrement les pizzas. À l'origine de cette belle aventure, moi, Evan Harel, chef et fondateur de cette entreprise, j’ai créé La TourDePizz de mes propres mains grâce à une camionnette retapée, transformée en ce qu’elle est aujourd’hui : un véritable food truck.
+
+        Nos pizzas sont préparées avec des produits frais et locaux, soigneusement sélectionnés pour garantir une qualité irréprochable et des saveurs authentiques. Ce choix de travailler avec des ingrédients de proximité reflète notre engagement envers la qualité et le respect de notre terroir.
+        
+        Grâce à cette initiative, nous avons fidélisé de nombreux clients, ce qui a permis à l’entreprise de se développer davantage. D’autres personnes ont rejoint cette belle aventure qu’est La TourDePizz, qui continue de prospérer depuis plusieurs années, pour mon plus grand bonheur.
+        
+        Vous pouvez nous retrouver principalement à l’IUT d’Elbeuf pour le service du midi, ou au centre d’Elbeuf pour le service du soir. Nous sommes également disponibles pour tous types d’événements, sous réservation.
+        
+       <br> N’hésitez pas à venir nombreux, nous vous attendons avec impatience !
+
+    </p>
+</div>      
+</div>
+<script>
+    const aff=document.getElementById("langue");
+let bouton=document.getElementsByTagName("button");
+bouton[0].addEventListener("click",fr); 
+function fr(){
+console.log("click");
+aff.innerHTML="<p>Nous sommes une petite entreprise de food truck spécialisée dans la cuisine italienne, et plus particulièrement les pizzas. À l'origine de cette belle aventure, moi, Evan Harel, chef et fondateur de cette entreprise, j’ai créé La TourDePizz de mes propres mains grâce à une camionnette retapée, transformée en ce qu’elle est aujourd’hui : un véritable food truck. Nos pizzas sont préparées avec des produits frais et locaux, soigneusement sélectionnés pour garantir une qualité irréprochable et des saveurs authentiques. Ce choix de travailler avec des ingrédients de proximité reflète notre engagement envers la qualité et le respect de notre terroir. Grâce à cette initiative, nous avons fidélisé de nombreux clients, ce qui a permis à l’entreprise de se développer davantage. D’autres personnes ont rejoint cette belle aventure qu’est La TourDePizz, qui continue de prospérer depuis plusieurs années, pour mon plus grand bonheur. Vous pouvez nous retrouver principalement à l’IUT d’Elbeuf pour le service du midi, ou au centre d’Elbeuf pour le service du soir. Nous sommes également disponibles pour tous types d’événements, sous réservation.<br> N’hésitez pas à venir nombreux, nous vous attendons avec impatience !</p>";
+}
+bouton[1].addEventListener("click",en);
+function en(){
+aff.innerHTML="<p>We are a small food truck company specializing in Italian cuisine, and more specifically pizzas. At the origin of this great adventure, I, Evan Harel, chef and founder of this company, created La TourDePizz with my own hands thanks to a restored van, transformed into what it is today: a real food truck. Our pizzas are prepared with fresh and local products, carefully selected to guarantee impeccable quality and authentic flavors. This choice to work with local ingredients reflects our commitment to quality and respect for our land. Thanks to this initiative, we have built loyalty among many customers, which has allowed the company to grow further. Other people have joined this great adventure that is La TourDePizz, which has continued to thrive for several years, to my great delight. You can find us mainly at the IUT of Elbeuf for lunch service, or at the center of Elbeuf for evening service. We are also available for all types of events, by reservation. <br> Do not hesitate to come in large numbers, we look forward to seeing you!</p>"
+}
+
+</script>
+<footer>
+    <a href="https://www.instagram.com"><img src="img/logoinsta.webp" alt="instagram"></a>
+    <a href="https://x.com/?lang=fr"><img src="img/logox.png" alt="x"></a>
+    <a href="https://www.facebook.com/?locale=fr_FR"><img src="img/logofab.png" alt="facabook"></a>
+</footer>
+
+</body>
+</html>
